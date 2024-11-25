@@ -11,6 +11,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install Dependencies
+        run: sudo apt-get -y install python3-numpy libboost-all-dev
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
